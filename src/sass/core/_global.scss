@@ -1,0 +1,40 @@
+/**
+ * Global styles
+ */
+
+.valign {
+    i,
+    .center {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    i {
+        height: 100%;
+    }
+}
+
+.center-block {
+    float: none;
+}
+
+.btn {
+    transition: 0.2s;
+
+    &:focus,
+    &.focus,
+    &:active:focus,
+    &:active.focus,
+    &.active:focus,
+    &.active.focus {
+        outline: none;
+    }
+}
+
+svg.icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff;
+    width: 1em;
+    height: 1em;
+}

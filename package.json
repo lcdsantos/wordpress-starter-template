@@ -1,0 +1,51 @@
+{
+    "author": "WordPress Starter Template",
+    "private": true,
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1",
+        "browser-sync": "^2.23.6",
+        "eslint": "^4.13.0",
+        "eslint-loader": "^1.9.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-changed": "^3.1.1",
+        "gulp-clean": "^0.4.0",
+        "gulp-csso": "^3.0.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-rev": "^8.1.0",
+        "gulp-rev-delete-original": "^0.2.3",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.6.1",
+        "gulp-svgstore": "^6.1.0",
+        "gulp-util": "^3.0.8",
+        "lint-staged": "^7.0.0",
+        "node-sass-tilde-importer": "1.0.0",
+        "prettier": "^1.11.1",
+        "webpack": "^3.11.0",
+        "webpack-stream": "^4.0.0"
+    },
+    "dependencies": {
+        "bootstrap-sass": "^3.3.7",
+        "svg4everybody": "^2.1.9"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "gulp",
+        "build": "gulp build --production",
+        "precommit": "lint-staged"
+    },
+    "prettier": {
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 4
+    },
+    "lint-staged": {
+        "src/**/*.{js,json,scss}": [
+            "prettier --write",
+            "git add"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "private": true,
+    "devDependencies": {
+        "husky": "^0.14.3"
+    },
+    "scripts": {
+        "precommit": "cd wp-content/themes/imoveispop && npm run precommit"
+    }
+}
